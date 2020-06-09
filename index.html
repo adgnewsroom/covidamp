@@ -3,10 +3,10 @@
 
 <head>
   <meta charset="utf-8">
-  <title>TBA</title>
+  <title>Quarantined in the Natural State</title>
 
   <meta name="author" content="Yutao Chen" />
-  <meta name="description" content="TBA" />
+  <meta name="description" content="Quarantined in the Natural State" />
   <meta name="keywords" content="Arkansas" />
   <meta name="Resource-type" content="Document" />
 
@@ -20,10 +20,10 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@arkansasonline" />
   <meta name="twitter:description" content="Explore the year's best photos from the Arkansas Democrat-Gazette newsroom." />
-  <meta name="twitter:title" content="TBA" />
+  <meta name="twitter:title" content="Quarantined in the Natural State" />
   <meta name="twitter:image" content="https://s3.amazonaws.com/new_videos/year_in_pictures/thumbnail.jpg" />
 
-  <meta property="og:title" content="TBA" />
+  <meta property="og:title" content="Quarantined in the Natural State" />
   <meta property="og:url" content="https://www.arkansasonline.com/yearinpictures/" />
   <meta property="og:image" content="https://s3.amazonaws.com/new_videos/year_in_pictures/thumbnail.jpg" />
   <meta property="og:site_name" content="Arkansas Online" />
@@ -31,7 +31,7 @@
 
   <!-- klangoo starts -->
   <meta itemprop="identifier" content="1192324" />
-  <meta itemprop="headline" content="TBA" />
+  <meta itemprop="headline" content="Quarantined in the Natural State" />
   <meta itemprop="description" content="Explore the year's best photos from the Arkansas Democrat-Gazette newsroom." />
 
   <meta itemprop="url" content="https://www.arkansasonline.com/yearinpictures/" />
@@ -81,7 +81,7 @@
   })();
 
   </script>
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto|Roboto+Condensed|Nixie+One&display=swap" rel="stylesheet">
   <style amp-custom>
     [class*="amphtml-story-grid-template-fill"].contain>amp-img img,
     [class*="amphtml-story-grid-template-fill"].contain>amp-video video {
@@ -141,23 +141,9 @@
       }
     }
 
-    .fade1 {
-      animation: animfade1 10s infinite;
-    }
-
-    .fade2 {
-      animation: animfade2 10s infinite;
-      opacity: 0;
-    }
-
-    .fade3 {
-      animation: animfade3 10s infinite;
-      opacity: 0
-    }
-
-    .fade4 {
-      animation: animfade4 15s infinite;
-      opacity: 0;
+    .cover1 {
+      filter: brightness(80%);
+      position: absolute;
     }
 
     @keyframes animfade1 {
@@ -254,9 +240,9 @@
 
 
     h1 {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Nixie One', cursive;
       font-weight: bold;
-      font-size: 2.8em;
+      font-size: 2.9em;
       font-weight: normal;
       line-height: 1.174;
       text-align: center;
@@ -314,6 +300,18 @@
       max-width: 70vw;
     }
 
+    h4 {
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: normal;
+      font-size: 1.1em;
+      line-height: 1.3em;
+      color: #fff;
+      padding-top: 25vh;
+      padding-left: 40vw;
+      text-align: left;
+      max-width: 75vw;
+    }
+
     p {
       font-family: 'Roboto', sans-serif;
       font-weight: normal;
@@ -348,8 +346,8 @@
       line-height: 2em;
     }
 
-    .cover {
-      filter: brightness(50%);
+    #cover {
+      background-color: black;
     }
 
     amp-story-grid-layer[template="vertical"].credit-layer {
@@ -405,9 +403,13 @@
 
 <body>
   <!-- Cover page -->
-  <amp-story standalone supports-landscape title="TBA" publisher="AMP tutorials" publisher-logo-src="assets/AMP-Brand-White-Icon.svg" poster-portrait-src="assets/cover.jpg">
+  <amp-story standalone supports-landscape title="Quarantined in the Natural State" publisher="AMP tutorials" publisher-logo-src="assets/AMP-Brand-White-Icon.svg" poster-portrait-src="assets/cover.jpg">
     <amp-story-page id="cover">
-      <amp-story-grid-layer template="fill" class="cover">
+      <amp-story-grid-layer template="fill" class="cover1">
+        <amp-img src="cover.jpg" width="1000" height="1000" layout="responsive">
+        </amp-img>
+      </amp-story-grid-layer>
+      <!-- <amp-story-grid-layer template="fill" class="cover">
         <amp-img src="day2_1.jpg" width="1220" height="780" layout="responsive" class="fade1">
         </amp-img>
         <amp-img src="day3_5.jpg" width="1220" height="780" layout="responsive" class="fade2">
@@ -416,41 +418,46 @@
         </amp-img>
         <amp-img src="day1_2.jpg" width="1220" height="780" layout="responsive" class="fade4">
         </amp-img>
-      </amp-story-grid-layer>
+      </amp-story-grid-layer> -->
       <amp-story-grid-layer template="vertical" class="title">
-        <h1>TITLE: TBA</h1>
-        <h2>Logline: TBA</h2>
+        <h1>QUARANTINED IN THE NATURAL STATE</h1>
+        <h2>Explore how the covid-19 pandemic has been impacting communities in Arkansas</h2>
       </amp-story-grid-layer>
       <amp-story-grid-layer class="logo-layer" template="vertical">
-        <amp-img src="https://s3.amazonaws.com/new_videos/year_in_pictures/logo.png" width="340" height="30"></amp-img>
+        <amp-img src="https://s3.amazonaws.com/new_videos/year_in_pictures/logo.png" width="450" height="40"></amp-img>
       </amp-story-grid-layer>
     </amp-story-page>
+
 
     <amp-story-page id="page0">
       <amp-story-grid-layer template="fill" class="contain">
-        <amp-img src="day3_4.jpg" width="1000" height="1000" layout="responsive" class="blur">
+        <amp-img src="armap.jpg" width="1980" height="1080" layout="responsive">
         </amp-img>
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical" class="title">
-        <h3>INTRO</h3>
+        <h4>Closed restaurants, empty theaters, cancelled graduations - the covid-19 pandemic has changed lives of most Arkansans even without a statewide shelter-in-place order.
+          <br></br>With most public spaces emptied and businesses shuttered, streets of many Arkansas towns look different in a spring like no other.</h4>
       </amp-story-grid-layer>
     </amp-story-page>
 
-    <amp-story-page id="page1">
-      <amp-story-grid-layer template="fill" class="contain1">
-        <amp-img src="map1.jpg" layout="flex-item">
-        </amp-img>
-      </amp-story-grid-layer>
-      <amp-story-grid-layer template="vertical" class="caption">
-        <p>Some text about Searcy</p>
-      </amp-story-grid-layer>
-    </amp-story-page>
 
     <amp-story-page id="page1">
       <amp-story-grid-layer template="fill" class="contain">
         <amp-img src="day1_1.jpg" width="1000" height="1000" layout="responsive">
         </amp-img>
       </amp-story-grid-layer>
+      <!-- <amp-story-grid-layer template="vertical" class="logo-layer">
+        <div class="logo-wrapper">
+          <amp-img
+            src="https://projects.sfchronicle.com/shared/logos/sfletter_c_white_small.png"
+            width="50"
+            height="59"
+            layout="responsive">
+          </amp-img>
+        </div>
+      </amp-story-grid-layer> -->
+
+
       <amp-story-grid-layer template="vertical" class="credit-layer">
         <p class="credit">
           Searcy, AR
@@ -483,7 +490,7 @@
       </amp-story-grid-layer>
     </amp-story-page>
 
-    <amp-story-page id="page1">
+    <!-- <amp-story-page id="page1">
       <amp-story-grid-layer template="fill" class="contain1">
         <amp-img src="map1.jpg" layout="flex-item">
         </amp-img>
@@ -491,7 +498,7 @@
       <amp-story-grid-layer template="vertical" class="caption">
         <p>Some text about Heber Springs</p>
       </amp-story-grid-layer>
-    </amp-story-page>
+    </amp-story-page> -->
 
     <amp-story-page id="page4">
       <amp-story-grid-layer template="fill" class="contain">
@@ -529,7 +536,7 @@
       </amp-story-grid-layer>
     </amp-story-page>
 
-    <amp-story-page id="page1">
+    <!-- <amp-story-page id="page1">
       <amp-story-grid-layer template="fill" class="contain1">
         <amp-img src="map1.jpg" layout="flex-item">
         </amp-img>
@@ -537,7 +544,7 @@
       <amp-story-grid-layer template="vertical" class="caption">
         <p>Some text about Benton</p>
       </amp-story-grid-layer>
-    </amp-story-page>
+    </amp-story-page> -->
 
     <amp-story-page id="page7">
       <amp-story-grid-layer template="fill" class="contain">
@@ -563,7 +570,7 @@
       </amp-story-grid-layer>
     </amp-story-page>
 
-    <amp-story-page id="page1">
+    <!-- <amp-story-page id="page1">
       <amp-story-grid-layer template="fill" class="contain1">
         <amp-img src="map1.jpg" layout="flex-item">
         </amp-img>
@@ -571,7 +578,7 @@
       <amp-story-grid-layer template="vertical" class="caption">
         <p>Some text about Malvern</p>
       </amp-story-grid-layer>
-    </amp-story-page>
+    </amp-story-page> -->
 
     <amp-story-page id="page9">
       <amp-story-grid-layer template="fill" class="contain">
@@ -585,7 +592,7 @@
       </amp-story-grid-layer>
     </amp-story-page>
 
-    <amp-story-page id="page10">
+    <!-- <amp-story-page id="page10">
       <amp-story-grid-layer template="fill" class="contain">
         <amp-img src="day2_4.jpg" width="1000" height="1000" layout="responsive">
         </amp-img>
@@ -595,9 +602,9 @@
           Malvern, AR
         </p>
       </amp-story-grid-layer>
-    </amp-story-page>
+    </amp-story-page> -->
 
-    <amp-story-page id="page1">
+    <!-- <amp-story-page id="page1">
       <amp-story-grid-layer template="fill" class="contain1">
         <amp-img src="map1.jpg" layout="flex-item">
         </amp-img>
@@ -605,7 +612,7 @@
       <amp-story-grid-layer template="vertical" class="caption">
         <p>Some text about Hot Springs</p>
       </amp-story-grid-layer>
-    </amp-story-page>
+    </amp-story-page> -->
 
     <amp-story-page id="page11">
       <amp-story-grid-layer template="fill" class="contain">
@@ -631,7 +638,7 @@
       </amp-story-grid-layer>
     </amp-story-page>
 
-    <amp-story-page id="page1">
+    <!-- <amp-story-page id="page1">
       <amp-story-grid-layer template="fill" class="contain1">
         <amp-img src="map1.jpg" layout="flex-item">
         </amp-img>
@@ -639,7 +646,7 @@
       <amp-story-grid-layer template="vertical" class="caption">
         <p>Some text about Morrilton</p>
       </amp-story-grid-layer>
-    </amp-story-page>
+    </amp-story-page> -->
 
     <amp-story-page id="page13">
       <amp-story-grid-layer template="fill" class="contain">
@@ -665,7 +672,7 @@
       </amp-story-grid-layer>
     </amp-story-page>
 
-    <amp-story-page id="page1">
+    <!-- <amp-story-page id="page1">
       <amp-story-grid-layer template="fill" class="contain1">
         <amp-img src="map1.jpg" layout="flex-item">
         </amp-img>
@@ -673,7 +680,7 @@
       <amp-story-grid-layer template="vertical" class="caption">
         <p>Some text about Batesville</p>
       </amp-story-grid-layer>
-    </amp-story-page>
+    </amp-story-page> -->
 
     <amp-story-page id="page15">
       <amp-story-grid-layer template="fill" class="contain">
@@ -711,7 +718,7 @@
       </amp-story-grid-layer>
     </amp-story-page>
 
-    <amp-story-page id="page18">
+    <!-- <amp-story-page id="page18">
       <amp-story-grid-layer template="fill" class="contain">
         <amp-img src="day3_4.jpg" width="1000" height="1000" layout="responsive">
         </amp-img>
@@ -721,9 +728,9 @@
           Batesville, AR
         </p>
       </amp-story-grid-layer>
-    </amp-story-page>
+    </amp-story-page> -->
 
-    <amp-story-page id="page1">
+    <!-- <amp-story-page id="page1">
       <amp-story-grid-layer template="fill" class="contain1">
         <amp-img src="map1.jpg" layout="flex-item">
         </amp-img>
@@ -731,7 +738,7 @@
       <amp-story-grid-layer template="vertical" class="caption">
         <p>Some text about Booneville</p>
       </amp-story-grid-layer>
-    </amp-story-page>
+    </amp-story-page> -->
 
     <amp-story-page id="page18">
       <amp-story-grid-layer template="fill" class="contain">
@@ -769,7 +776,7 @@
       </amp-story-grid-layer>
     </amp-story-page>
 
-    <amp-story-page id="page1">
+    <!-- <amp-story-page id="page1">
       <amp-story-grid-layer template="fill" class="contain1">
         <amp-img src="map1.jpg" layout="flex-item">
         </amp-img>
@@ -777,7 +784,7 @@
       <amp-story-grid-layer template="vertical" class="caption">
         <p>Some text about Waldron</p>
       </amp-story-grid-layer>
-    </amp-story-page>
+    </amp-story-page> -->
 
     <amp-story-page id="page18">
       <amp-story-grid-layer template="fill" class="contain">
@@ -815,7 +822,7 @@
       </amp-story-grid-layer>
     </amp-story-page>
 
-    <amp-story-page id="page1">
+    <!-- <amp-story-page id="page1">
       <amp-story-grid-layer template="fill" class="contain1">
         <amp-img src="map1.jpg" layout="flex-item">
         </amp-img>
@@ -823,7 +830,7 @@
       <amp-story-grid-layer template="vertical" class="caption">
         <p>Some text about Danville</p>
       </amp-story-grid-layer>
-    </amp-story-page>
+    </amp-story-page> -->
 
     <amp-story-page id="page18">
       <amp-story-grid-layer template="fill" class="contain">
@@ -874,6 +881,12 @@
               "type": "small"
             },
             {
+              "title": "Read lastest coverage on coronavirus",
+              "url": "https://www.arkansasonline.com/news/coronavirus/",
+              "image": "virus.png",
+              "type": "small"
+            },
+            {
               "title": "Follow us on Instagram",
               "url": "https://www.instagram.com/arkansasonline/",
               "image": "https://s3.amazonaws.com/new_videos/year_in_pictures/logo_small.png",
@@ -886,7 +899,7 @@
             {
               "type": "textbox",
               "text": [
-                "photography, design and development by Yutao Chen."
+                "Photography, design and development by Yutao Chen."
               ]
             }
           ]
